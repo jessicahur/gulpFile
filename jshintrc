@@ -1,4 +1,5 @@
 {
   "node": true,
-  "globals": false
+  "globals": true,
+  "strict": true
 }
