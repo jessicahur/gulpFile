@@ -11,8 +11,8 @@ gulp.task('mocha', function() {
 });
 
 gulp.task('lint', function() {
-  return gulp.src('./*.js')
-    .pipe(jshint())
+  return gulp.src(['*.js','test/*.js'])
+    .pipe(jshint('jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
