@@ -4,7 +4,6 @@ var greeting = require('../printGreeting.js');
 
 describe('check result', function(){
   //testing if importing module works
-  "use strict";
   it('should return Hello Jessica', function(){
     var result = greeting.greet('Jessica');
     assert.equal(result, 'Hello Jessica', 'import fails');
